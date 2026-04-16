@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PL.C Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="logo">PL.C</div>
+        <div class="nav-links">
+            <a href="#projets">Projets</a>
+            <a href="pdf/grille.pdf">Grille</a>
+            <a href="#about">À propos</a>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Bonjour, je suis <span>PL. C</span></h1>
+            <p>Découvrez mes projets et mon parcours dans l'administration système, réseau et la sécurisation
+                d'infrastructures.</p>
+            <a href="#projets" class="cta-button">Découvrez mes projets</a>
+        </div>
+    </header>
+
+    <!-- les projets -->
+    <section id="projets" class="projects-section">
+        <div class="section-header">
+            <h2>Mes Projets</h2>
+            <p>Une sélection de mes travaux réalisés durant mon parcours en formation et en entreprise</p>
+        </div>
+
+        <div class="filter-container">
+            <input type="radio" name="tech-filter" id="filter-all" checked>
+            <input type="radio" name="tech-filter" id="filter-linux">
+            <input type="radio" name="tech-filter" id="filter-windows">
+            <input type="radio" name="tech-filter" id="filter-backup">
+
+            <div class="filter-labels">
+                <label for="filter-all" class="filter-btn">Tous</label>
+                <label for="filter-linux" class="filter-btn">Linux</label>
+                <label for="filter-windows" class="filter-btn">Windows Server</label>
+                <label for="filter-backup" class="filter-btn">Sauvegarde</label>
+            </div>
+
+            <div class="categories">
+                <!-- En formation -->
+                <div class="category">
+                    <h3>En formation</h3>
+                    <div class="project-grid">
+                        <a href="projet-glpi.html" class="project-card tech-linux">
+                            <div class="card-image linux-bg">
+                                <img src="images/glpi.png" alt="glpi">
+                            </div>
+                            <div class="card-content">
+                                <h4>Parc informatique GLPI</h4>
+                                <div class="badges">
+                                    <span class="badge">GLPI</span>
+                                    <span class="badge">Linux</span>
+                                </div>
+                                <p>Déploiement d'une solution de gestion de parc informatique avec GLPI afin de centraliser l'inventaire des équipements, la gestion des utilisateurs et le suivi des incidents.</p>
+                            </div>
+                        </a>
+                        <a href="projet-ad.html" class="project-card tech-windows">
+                            <div class="card-image windows-bg">
+                                <img src="images/ad.png" alt="ad">
+                            </div>
+                            <div class="card-content">
+                                <h4>Active Directory</h4>
+                                <div class="badges">
+                                    <span class="badge">Windows Server</span>
+                                </div>
+                                <p>
+                                Déploiement d'un AD sous Windows Server afin de
+                                centraliser les groupes et des postes de travail,
+                                avec application de stratégies de groupe (GPO) pour sécuriser et automatiser
+                                l'administration du domaine.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="projet-dynfi.html" class="project-card tech-linux">
+                            <div class="card-image backup-bg">
+                                <img src="images/logo.svg" alt="dynfi">
+                            </div>
+                            <div class="card-content">
+                                <h4>Firewall DynFi</h4>
+                                <div class="badges">
+                                    <span class="badge">DynFi</span>
+                                    <span class="badge">Firewall</span>
+                                    <span class="badge">Linux</span>
+                                </div>
+                                <p>Mise en place d'une infrastructure redondante avec deux firewalls DynFi configurés en haute disponibilité (HA) via CARP et synchronisation PFSYNC.</p>
+                            </div>
+                        </a>
+                        <a href="projet-srvweb.html" class="project-card tech-linux">
+                            <div class="card-image backup-bg">
+                                <img src="images/apache.svg" alt="apache">
+                            </div>
+                            <div class="card-content">
+                                <h4>Serveur web Debian</h4>
+                                <div class="badges">
+                                    <span class="badge">Debian</span>
+                                    <span class="badge">Apache</span>
+                                    <span class="badge">Linux</span>
+                                </div>
+                                <p>Déploiement complet d'un serveur web sur Debian avec une infrastructure LAMP (Linux, Apache, MariaDB, PHP).</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- En stage -->
+                <div class="category">
+                    <h3>En stage</h3>
+                    <div class="project-grid">
+                        <a href="projet-veeam.html" class="project-card tech-backup tech-windows">
+                            <div class="card-image backup-stage-bg">
+                                <img src="images/veeam.png" alt="veaam">
+                            </div>
+                            <div class="card-content">
+                                <h4>Veeam Backup & Replication</h4>
+                                <div class="badges">
+                                    <span class="badge">Sauvegarde</span>
+                                    <span class="badge">Windows Server</span>
+                                </div>
+                                <p></p>
+                            </div>
+                        </a>
+                        <a href="projet-wserver.html" class="project-card tech-windows">
+                            <div class="card-image windows-bg">
+                                <img src="images/hyperv.png" alt="hyperv">
+                            </div>
+                            <div class="card-content">
+                                <h4>Windows Server & Hyper-V</h4>
+                                <div class="badges">
+                                    <span class="badge">Windows Server</span>
+                                </div>
+                                <p></p>
+                            </div>
+                        </a>
+                        <a href="projet-stormshield.html" class="project-card tech-linux">
+                            <div class="card-image linux-stage-bg">
+                                <img src="images/stormshield.png" alt="stormshield">
+                            </div>
+                            <div class="card-content">
+                                <h4>Firewall Stormshield</h4>
+                                <div class="badges">
+                                    <span class="badge">Stormshield</span>
+                                </div>
+                                <p></p>
+                            </div>
+                        </a>
+                        <a href="projet-webapp.html" class="project-card tech-linux">
+                            <div class="card-image linux-stage-bg">
+                                <img src="images/react.png" alt="react">
+                            </div>
+                            <div class="card-content">
+                                <h4>Développement & déploiement Application Web</h4>
+                                <div class="badges">
+                                    <span class="badge">React</span>
+                                </div>
+                                <p></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hors formation -->
+                <div class="category">
+                    <h3>Hors formation</h3>
+                    <div class="project-grid">
+                        <a href="projet-proxmox.html" class="project-card tech-linux tech-backup">
+                            <div class="card-image homelab-bg">
+                                <img src="images/proxmox.png" alt="proxmox">
+                            </div>
+                            <div class="card-content">
+                                <h4>Proxmox Homelab</h4>
+                                <div class="badges">
+                                    <span class="badge">Linux</span>
+                                    <span class="badge">Sauvegarde</span>
+                                </div>
+                                <p>Infrastructure personnelle virtualisée, intégration de conteneurs LXC et sauvegardes
+                                    via Proxmox Backup Server.</p>
+                            </div>
+                        </a>
+                        <a href="projet-proxmox.html" class="project-card tech-linux tech-backup">
+                            <div class="card-image homelab-bg">
+                                <img src="images/omv.svg" alt="omv">
+                            </div>
+                            <div class="card-content">
+                                <h4>OMV NAS</h4>
+                                <div class="badges">
+                                    <span class="badge">Linux</span>
+                                    <span class="badge">Sauvegarde</span>
+                                </div>
+                                <p>Infrastructure personnelle virtualisée, intégration de conteneurs LXC et sauvegardes
+                                    via Proxmox Backup Server.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="parcours" class="parcours-section">
+        <div class="parcours-container">
+
+            <div class="section-header">
+                <h2>Mon parcours</h2>
+                <p>Évolution de mon parcours en formation, projets et expériences professionnelles.</p>
+            </div>
+
+            <div class="timeline">
+
+                <!-- 2026 -->
+                <div class="timeline-year">
+                    <div class="year">2026</div>
+
+                    <div class="timeline-content">
+
+                        <div class="timeline-block">
+                            <h3>Formation</h3>
+                            <ul>
+                                <li>Deuxième année à l'école EPSI, Toulouse</li>
+                                <li>Deuxième année BTS SIO SISR (Solutions d’Infrastructure, Systèmes et Réseaux)</li>
+                                <li>Préparation certification Cisco CCNA</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-block">
+                            <h3>Projets</h3>
+                            <ul>
+                                <li><a href="projet-veeam.html">Veeam Backup & Replication (Stage)</a></li>
+                                <li><a href="projet-wserver.html">Windows Server & Hyper-V (Stage)</a></li>
+                                <li><a href="projet-stormshield.html">Firewall Stormshield (Stage)</a></li>
+                                <li><a href="projet-dynfi.html">Firewall DynFi</a></li>
+                                <li><a href="projet-syslinux.html">Administration et sécurisation système Linux</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-block">
+                            <h3>Professionnel</h3>
+                            <ul>
+                                <li>Stage de 6 semaines chez "Itteo"</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 2025 -->
+                <div class="timeline-year">
+                    <div class="year">2025</div>
+
+                    <div class="timeline-content">
+
+                        <div class="timeline-block">
+                            <h3>Formation</h3>
+                            <ul>
+                                <li>Première année à l'école EPSI, Toulouse</li>
+                                <li>Première année BTS SIO SISR (Solutions d’Infrastructure, Systèmes et Réseaux)</li>
+                                <li>Certification SecNumAcademies</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-block">
+                            <h3>Projets</h3>
+                            <ul>
+                                <li><a href="projet-webapp.html">Développement & déploiement Application Web (Stage)</a></li>
+                                <li><a href="projet-ad.html">Déploiement Active Directory</a></li>
+                                <li><a href="projet-srvweb.html">Serveur web Debian Apache</a></li>
+                                <li><a href="projet-glpi.html">Gestion de parc GLPI</a></li>
+                                <li><a href="projet-webapp-php.html">Développement et sécurisation Application Web PHP</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-block">
+                            <h3>Professionnel</h3>
+                            <ul>
+                                <li>Stage de 6 semaines chez "Web Eclosion"</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 2024 -->
+                <div class="timeline-year">
+                    <div class="year">2024</div>
+
+                    <div class="timeline-content">
+
+                        <div class="timeline-block">
+                            <h3>Formation</h3>
+                            <ul>
+                                <li>Autoformation Linux & virtualisation</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-block">
+                            <h3>Projets</h3>
+                            <ul>
+                                <li><a href="projet-proxmox.html">Homelab Proxmox</a></li>
+                                <li><a href="projet-omv.html">NAS OpenMediaVault</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>À propos de moi</h2>
+                <p>DESC DESC DESC DESC DESC DESC</p>
+
+                <div class="info-grid">
+                    <div class="info-block">
+                        <h3>Mon Profil</h3>
+                        <p class="mini-cv">DESC DESC DESC DESC</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>Certifications</h3>
+                        <ul>
+                            <li>Cisco CCNA (En cours de préparation)</li>
+                            <li>SecNumAcadémie (ANSSI)</li>
+                        </ul>
+                    </div>
+                    <div class="info-block">
+                        <h3>Hobbies</h3>
+                        <div class="hobbies-list">
+                            <span class="hobby-tag">Homelab & Self-hosting</span>
+                            <span class="hobby-tag">MAO</span>
+                            <span class="hobby-tag">Gamedev</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 PL.C</p>
+            <div class="footer-links">
+                <a href="politique-confidentialite.html">Politique de confidentialité</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
